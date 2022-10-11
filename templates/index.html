@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>House Loan App </title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ <h2 align="center">Jai Home Loan Prediction</h2>   
+
+ <body style="background-color:#b3ffb3;">
+    
+    <center>
+    <form method="POST" action="{{ url_for('predict')}}" enctype="multipart/form-data">
+		 <p>Please select your Gender
+		  <input type="radio" name="Gender" value =0> Male
+		  <input type="radio" name="Gender" value =1> Female
+		  </p>
+		   <p>Marrital Status
+		  <input type="radio" name="Married" value = 1> Yes
+		  <input type="radio" name="Married" value = 0> No
+		  </p>
+		  
+		  <p>No of Dependents<br>
+		  <input type="number" name="Dependents" required="required"/><br/>
+		  
+		  <p>Education
+		  <input type="radio" name="Education" value = 0> Graduate
+		  <input type="radio" name="Education" value = 1> Not Graduate
+		  </p>
+		  
+		  <p>Are You Self Worker
+		  <input type="radio" name="Self_Employed" value = 1> Yes
+		  <input type="radio" name="Self_Employed" value = 0> No
+		  </p>
+		  
+		  <p>Enter your Income<br>
+		  <input type="number" name="ApplicantIncome" required="required"/><br/>
+		  
+		  <p>Enter your CoApplicant Income<br>
+		  <input type="number" name="CoapplicantIncome" required="required"/><br/>
+		  
+		  <p>Enter your LoanAmount<br>
+		  <input type="number" name="LoanAmount" required="required"/><br/>
+		  
+		  <p>Enter your LoanAmountTerm<br>
+		  <input type="number" name="Loan_Amount_Term" required="required"/><br/>
+		  
+		   <p>Enter your Credit Hostory<br>
+		  <input type="number" name="Credit_History" required="required"/><br/>
+		  
+		   <p>Your Property Area<br><br>
+		  <input type="radio" name="Property_Area" value = 0> Urban
+		  <input type="radio" name="Property_Area" value = 1> Semiurban
+		  <input type="radio" name="Property_Area" value = 2> Rural
+		  </p>
+		  
+		  
+		  
+      <p><input type="submit" value="Predict"></p>
+	  </center>
+    </form>
+	   
+    
+    
+  </body>
+</html>
+
+ 
